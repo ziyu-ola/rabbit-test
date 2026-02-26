@@ -12,6 +12,8 @@ func TestIsPrime(t *testing.T) {
 		n    int
 		want bool
 	}{
+		{n: -1, want: false},
+		{n: 0, want: false},
 		{n: 1, want: false},
 		{n: 2, want: true},
 		{n: 3, want: true},
@@ -46,7 +48,12 @@ func TestLoopAndCheckPrimes(t *testing.T) {
 	}
 
 	for n, want := range expected {
-		if got := results[n]; got != want {
+		got, ok := results[n]
+		if !ok {
+			t.Errorf("LoopAndCheckPrimes() missing key %d", n)
+			continue
+		}
+		if got != want {
 			t.Errorf("LoopAndCheckPrimes()[%d] = %v, want %v", n, got, want)
 		}
 	}
