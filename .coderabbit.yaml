@@ -1,5 +1,5 @@
   language: "en-US"
-  tone_instructions: "Be concise. Focus on bugs, security, and performance. Skip style nits."
+  tone_instructions: "Be concise. Focus on bugs, security, and performance. Skip style nits. Always post feedback as inline review comments on the specific lines of code."
 
   reviews:
     auto_review:
