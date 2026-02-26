@@ -30,12 +30,11 @@ reviews:
       instructions: "Focus on security and error handling"
     - path: "src/components/**"
       instructions: "Check for accessibility issues"
+  tools:
+    eslint:
+      enabled: true
+    gitleaks:
+      enabled: true
 
 chat:
   auto_reply: true
-
-tools:
-  eslint:
-    enabled: true
-  gitleaks:
-    enabled: true
