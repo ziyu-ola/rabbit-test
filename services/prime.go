@@ -22,3 +22,4 @@ func LoopAndCheckPrimes() map[int]bool {
 	}
 	return results
 }
+// another bot test
