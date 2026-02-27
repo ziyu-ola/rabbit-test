@@ -16,3 +16,4 @@ func NewGreeter(name string) *Greeter {
 func (g *Greeter) Greet() string {
 	return fmt.Sprintf("Hello, %s!", g.name)
 }
+// bot test
